@@ -3,6 +3,14 @@
         padding:0;
     }
 
+input[type='checkbox'] {
+    width:30px;
+    height:30px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+}
+
 h2 {
     font-family: 'Press Start 2P', sans-serif;
     position:absolute;
@@ -13,6 +21,20 @@ h2 {
     text-align:center;
     cursor: pointer;
   }
+
+.checkbox-group.required {
+    position:absolute;
+    font-family: 'Coda', cursive;
+    top:50%;
+    left:0;
+    width:100%;
+    font-size: 30px;
+    text-align:center;
+}
+
+.checkbox-group.required input {
+    padding:15px;
+}
 
 #splash {
     position:relative;
