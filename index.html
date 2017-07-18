@@ -1,23 +1,35 @@
 <!--index.html-->
-
-<html>
+<html lang="en">
 <head>
-<title>HAH Ad Mockup</title>
-<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta charset="utf-8">
+    <title>HAH Ad Mockup</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
-    
-    
     
 <body>
     
-    <div class="background-wrap">   
-        
+    
+    <div id="splash">
+        <h2 id="enter">ENTER</h2>
+        <img src="img/ufo.jpg">
+    </div>
+    
+    
+    <div id="post-splash">   
         <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
             <source src="static1.mp4" type="video/mp4">
             Video not supported
         </video>
+        
+        <h2>Success</h2>
+        
     </div>
-    
+    <script>
+    $( "#enter" ).click(function() {
+      $( "#splash" ).fadeOut( "slow" );
+    });
+    </script>
 </body>
     
 </html>
