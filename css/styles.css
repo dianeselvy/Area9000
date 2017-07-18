@@ -4,11 +4,13 @@
     }
 
 h2 {
+    font-family: 'Press Start 2P', sans-serif;
     position:absolute;
-    top:200px;
+    top:30%;
     left:0;
     width:100%;
-    font-size: 150%;
+    font-size: 150px;
+    text-align:center;
     cursor: pointer;
   }
 
