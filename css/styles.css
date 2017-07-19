@@ -11,14 +11,13 @@ input[type='checkbox'] {
     border:2px solid #555;
 }
 
-h2 {
-    font-family: 'Press Start 2P', sans-serif;
+#enter {
     position:absolute;
-    top:30%;
-    left:0;
-    width:100%;
-    font-size: 150px;
-    text-align:center;
+    top:-50%;
+    left:50%;
+    width: 500px;
+    margin-right:-50%;
+    transform:translate(-50%, -50%);
     cursor: pointer;
   }
 
@@ -79,33 +78,48 @@ body{
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 480px) {
-h2 {
-    font-size: 40px;
+#enter {
+    width: 225px;
   }
     
 .checkbox-group.required {
-    font-size: 20px;
+    font-size: 16px;
+}
+    
+#splash img {
+    height:100%;
+    width:auto;
 }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width : 481px) and (max-width : 675px) {
-h2 {
-    font-size: 70px;
+#enter {
+    width:400px;
   }
     
 .checkbox-group.required {
     font-size: 24px;
 }
+    
+#splash img {
+    height:100%;
+    width:auto;
+}
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width : 676px) and (max-width : 1024px) {
-h2 {
-    font-size: 100px;
+#enter {
+    width:500px;
   }
 
 .checkbox-group.required {
     font-size: 28px;
+}
+    
+#splash img {
+    height:100%;
+    width:auto;
 }
 }

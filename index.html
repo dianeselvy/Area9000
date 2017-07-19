@@ -13,11 +13,14 @@
     
     
     <div id="splash">
-        <h2 id="enter">ENTER</h2><Br />
+        <!--<h2 id="enter">ENTER</h2><Br />-->
         <div class="checkbox-group required">
             <Br />
-            <input type="checkbox" name="21">  I am 21 years of age or older<Br /><Br />
-            <input type="checkbox" name="alien">  I am a human being
+            <form>
+                <input type="checkbox" name="age" id="age" required>  I am 21 years of age or older<Br /><Br />
+                <input type="checkbox" name="alien" id="alien" required>  I am not an alien
+                <input type="image" src="img/enter.png" id="enter">
+            </form>
         </div>
         <img src="img/ufo2.jpg">
     </div>
@@ -31,15 +34,23 @@
         
     </div>
     <script>
-    $( "#enter" ).click(function() {
-      $( "#splash" ).fadeOut( "slow" );
-    });
         
-    $( "#enter" ).click(function() {
-      $( "#post-splash" ).fadeIn( "slow" );
-    });
+    /*function ageVerification(){
+        document.getElementById("age").required = true;
+        document.getElementById("alien").required = true;
         
-    $('div.checkbox-group.required :checkbox:checked').length > 1;
+    }*/
+        
+
+    if(form.checkbox.checked) {
+        $( "#enter" ).click(function() {
+          $( "#splash" ).fadeOut( "slow" );
+        });
+
+        $( "#enter" ).click(function() {
+          $( "#post-splash" ).fadeIn( "slow" );
+        });
+    }
     </script>
 </body>
     
