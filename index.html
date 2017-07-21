@@ -9,20 +9,18 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
     
-<body>
-    
-    
+<body>    
     <div id="splash">
         <!--<h2 id="enter">ENTER</h2><Br />-->
-        <div class="checkbox-group required">
+        <div class="checkbox-group">
             <Br />
             <form>
-                <input type="checkbox" name="age" id="age" required>  I am 21 years of age or older<Br /><Br />
-                <input type="checkbox" name="alien" id="alien" required>  I am not an alien
-                <input type="image" src="img/enter.png" id="enter">
+                <input type="checkbox" name="age" class="age" required>  I am 21 years of age or older<Br /><Br />
+                <input type="checkbox" name="alien" class="alien" required>  I am not an alien
+                <img src="img/enter.png" id="enter">
             </form>
         </div>
-        <img src="img/ufo2.jpg">
+        <img src="img/space.png" id="space">
     </div>
     
     
@@ -32,26 +30,20 @@
             Video not supported
         </video>
         
-    </div>
-    <script>
-        
-    /*function ageVerification(){
-        document.getElementById("age").required = true;
-        document.getElementById("alien").required = true;
-        
-    }*/
-        
+</div>
+<script>
+       
 
-    if(form.checkbox.checked) {
-        $( "#enter" ).click(function() {
-          $( "#splash" ).fadeOut( "slow" );
-        });
-
-        $( "#enter" ).click(function() {
-          $( "#post-splash" ).fadeIn( "slow" );
-        });
+$( "#enter" ).click(function() {
+    var ageCheck = $('.age').is(':checked');
+    var alienCheck = $('.alien').is(':checked');
+    if(ageCheck == true && alienCheck == true){
+        $( "#splash" ).fadeOut( "slow" );
+        $( "#post-splash" ).fadeIn( "slow" );
     }
-    </script>
-</body>
+});
     
+</script>   
+</body>
+
 </html>
