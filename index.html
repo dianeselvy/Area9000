@@ -25,7 +25,7 @@
     
     
     <div id="post-splash" style="display:none;">   
-        <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+        <video id="video-bg-elem" preload="auto" loop="loop" muted="muted">
             <source src="static1.mp4" type="video/mp4">
             Video not supported
         </video>
@@ -33,6 +33,7 @@
 </div>
 <script>
        
+var video = document.getElementById("video-bg-elem"); 
 
 $( "#enter" ).click(function() {
     var ageCheck = $('.age').is(':checked');
@@ -40,6 +41,7 @@ $( "#enter" ).click(function() {
     if(ageCheck == true && alienCheck == true){
         $( "#splash" ).fadeOut( "slow" );
         $( "#post-splash" ).fadeIn( "slow" );
+        video.play();
     }
 });
     
