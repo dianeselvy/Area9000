@@ -11,6 +11,10 @@ input[type='checkbox'] {
     border:2px solid #555;
 }
 
+input {
+    color:#3bc429;
+}
+
 #enter {
     position:absolute;
     top:-50%;
