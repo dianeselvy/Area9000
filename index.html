@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>HAH Ad Mockup</title>
+    <title>Area 9000</title>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <?php include_once("analyticstracking.php") ?>
 </head>
     
 <body>    
@@ -15,17 +16,17 @@
         <div class="checkbox-group">
             <Br />
             <form>
-                <input type="checkbox" name="age" class="age" required>  I am 21 years of age or older<Br /><Br />
-                <input type="checkbox" name="alien" class="alien" required>  I am not an alien
-                <img src="img/enter.png" id="enter">
+                <input type="checkbox" name="age" class="age" required><label for="age" style="color:#ffffff;"> I am 21 years of age or older</label><Br /><Br />
+                <input type="checkbox" name="alien" class="alien" required><label for="alien" style="color:#ffffff;"> I am not an alien</label>
+                <img src="img/enter3.png" id="enter">
             </form>
         </div>
-        <img src="img/space.png" id="space">
+        <img src="img/metal.jpg" id="space">
     </div>
     
     
     <div id="post-splash" style="display:none;">   
-        <video id="video-bg-elem" preload="auto" loop="loop">
+        <video id="video-bg-elem" loop="loop">
             <source src="alien.mp4" type="video/mp4">
             Video not supported
         </video>

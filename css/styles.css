@@ -4,9 +4,9 @@
     }
 
 input[type='checkbox'] {
-    width:30px;
-    height:30px;
-    background:white;
+    width:20px;
+    height:20px;
+    background:#21ed24;
     border-radius:5px;
     border:2px solid #555;
 }
@@ -17,7 +17,7 @@ input {
 
 #enter {
     position:absolute;
-    top:-50%;
+    top:-80%;
     left:50%;
     width: 500px;
     margin-right:-50%;
@@ -31,7 +31,7 @@ input {
     top:50%;
     left:0;
     width:100%;
-    font-size: 30px;
+    font-size: 20px;
     text-align:center;
 }
 
