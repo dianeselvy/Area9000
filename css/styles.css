@@ -11,15 +11,11 @@ input[type='checkbox'] {
     border:2px solid #555;
 }
 
-input {
-    color:#3bc429;
-}
-
 #enter {
     position:absolute;
-    top:-80%;
+    bottom:300;
     left:50%;
-    width: 500px;
+    width: 600px;
     margin-right:-50%;
     transform:translate(-50%, -50%);
     cursor: pointer;
@@ -39,7 +35,47 @@ input {
     padding:15px;
 }
 
+#ageCheck { 
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    bottom: 350;
+    left: 50%;
+}
+
+#ageCheck label{
+    font-family: 'Play', sans-serif;
+    color:#1dcf2b;
+    font-size:28px;
+}
+
+#alienCheck { 
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    bottom: 350;
+    left: 50%;
+}
+
+#alienCheck label{
+    font-family: 'Play', sans-serif;
+    color:#1dcf2b;
+    font-size:28px;
+}
+
 #splash {
+    position:relative;
+    top:0;
+    left:0;
+    bottom:0;
+}
+
+#splash-2 {
+    position:relative;
+    top:0;
+    left:0;
+    bottom:0;
+}
+
+#splash-3 {
     position:relative;
     top:0;
     left:0;

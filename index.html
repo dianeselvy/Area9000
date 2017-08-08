@@ -4,33 +4,32 @@
     <meta charset="utf-8">
     <title>Area 9000</title>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <?php include_once("analyticstracking.php") ?>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-103842819-1', 'auto');
-      ga('send', 'pageview'); 
-    </script>
 </head>
     
 <body>    
+    <img src="img/metal.jpg" id="space">
     <div id="splash">
         <!--<h2 id="enter">ENTER</h2><Br />-->
-        <div class="checkbox-group">
-            <Br />
-            <form>
-                <input type="checkbox" name="age" class="age" required><label for="age" style="color:#ffffff;"> I am 21 years of age or older</label><Br /><Br />
-                <input type="checkbox" name="alien" class="alien" required><label for="alien" style="color:#ffffff;"> I am not an alien</label>
                 <img src="img/enter3.png" id="enter">
-            </form>
-        </div>
-        <img src="img/metal.jpg" id="space">
+        
+    </div>
+    
+    <div id="splash-2" style="display:none;">
+        <form id="ageCheck">
+                <input type="checkbox" name="age" class="age" required>
+            <label for="age"> I am 21 years of age or older</label>
+        </form>
+    </div>
+    
+    <div id="splash-3" style="display:none;">
+        <form id="alienCheck">
+                <input type="checkbox" name="age" class="alien" required><label for="alien"> I am not an alien</label>
+        </form>
     </div>
     
     
@@ -46,16 +45,25 @@
 var video = document.getElementById("video-bg-elem"); 
 
 $( "#enter" ).click(function() {
-    var ageCheck = $('.age').is(':checked');
+        $( "#splash" ).fadeOut( "fast" );
+        $( "#splash-2" ).fadeIn( "fast" );    
+});
+    
+$( "#ageCheck" ).click(function() {
+        $( "#splash-2" ).fadeOut( "fast" );
+        $( "#splash-3" ).fadeIn( "fast" );    
+});
+    
+$( "#alienCheck" ).click(function() {
     var alienCheck = $('.alien').is(':checked');
-    if(ageCheck == true && alienCheck == true){
-        $( "#splash" ).fadeOut( "slow" );
-        $( "#post-splash" ).fadeIn( "slow" );
+    if(alienCheck == true){
+        $( "#splash-3" ).fadeOut( "slow" );
+        $( "#space" ).fadeOut( "slow" );
+        $( "#post-splash" ).fadeIn( "slow" ); 
         video.play();
     }
 });
-    
-</script>  
+</script>   
 </body>
 
 </html>
